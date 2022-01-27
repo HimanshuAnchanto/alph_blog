@@ -1,0 +1,74 @@
+<html>
+<head>
+    <style>
+        table, th, td ,tr{
+        /*--background-color: lightskyblue; */
+        color: rgb(19, 129, 78);
+        border: 1px solid rgb(143, 22, 22);
+        padding: 15px;
+        align: center;
+        border-spacing: 10px;
+        }
+        tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(odd),td:nth-child(odd) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <table>
+        <caption>First Table</caption>
+        <tr>
+            <th>Sno</th>
+            <th>Name</th>
+            <th>email</th>
+            
+        </tr>
+        <tr>
+            <td align="center">1</td>
+            <td>himanshu</td>
+            <td>him@example.com</td>
+            
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>saksham</td>
+            <td>saksham@example.com</td>
+            
+        </tr>
+    </table>
+    <a href="http://localhost:3000/home">Go to Main page</a>
+
+</body>
+</html>
