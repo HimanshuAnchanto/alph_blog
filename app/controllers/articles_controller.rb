@@ -16,6 +16,8 @@ class ArticlesController < ApplicationController
     
     def create
         @article = Article.new(article_params)
+        @article.user=User.last  #here ruby is smart enough because we have association so it will automatically extract id from user and update user_id
+        #@article.user_id=User.last.id
         if @article.save
             flash[:notice ]="Article Saved Successfully"
             redirect_to @article
